@@ -36,7 +36,7 @@ else:
             headers=headers,
         )
 
-        qa = QueryAgent(client=client, collections=["Cook"])
+        qa = QueryAgent(client=client, collections=["Cookbook"])
 
         if st.button("Submit Query"):
             with st.spinner("Getting answer from Weaviate..."):
